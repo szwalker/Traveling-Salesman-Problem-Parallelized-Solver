@@ -7,8 +7,7 @@ Given a group of n cities (from 0 to n-1). The traveling salesman must start fro
 This problem is a combinatorial optimization problem (n! possible solutions for n cities). One of the straightforward ways to solve it is through branch and bound (imagine constructing a tree that describes all the possible routes from the first city). However, the tree may get too large for large problems and it takes a long time for a sequential program to compute the solution.
 
 ## Parallelized Solver
-Here I present a parallelized solver `tsm.c` for this problem.
-
+Please see my source code in `tsm.c`.
 
 ## Program Input
 The input to your program is a text file that contains an NxN matrix, one row per line, representing the distance between any two cities. Your program will be called tsm. The command line then will be:
@@ -35,7 +34,7 @@ Here is an example of input file with 11 cities.
 1 12 2 9 3 4 9 13 3 0 1
 1 17 2 8 3 6 1 1 3 1 0
 ```
-s
+
 
 ## Program Output
 The program will output, to standard output stream, the best path you found and the total distance. Here is an example output:
